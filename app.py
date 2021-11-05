@@ -59,6 +59,14 @@ def handle_message(event):
         r = '我是機器人'
     elif '訂位' in msg:
         r = '你想訂孤支嗎?'
+    elif msg == '誰是女神':
+        r = '高文均'
+    elif msg == '誰是帥哥':
+        r = '吳忠頴'
+    elif msg in ['哈哈', '哈哈哈', '哈']:
+        r = '笑屁'
+    elif msg in ['白癡', '白吃', '白痴']:
+        r = '妳啊'
 
     line_bot_api.reply_message(
         event.reply_token,
